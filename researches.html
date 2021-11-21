@@ -80,7 +80,7 @@
         <nav class="nav d-flex justify-content-between">
           <a class="p-2 text-muted" href="index.html"><h4>Haici Yang</h4></a>
           <a class="p-2 text-muted" href="researches.html"><strong>Research</strong></a>
-          <a class="p-2 text-muted" href="resume.html">Resume</a>
+          <a class="p-2 text-muted" href="haici_yang_CV.pdf">Resume</a>
           <!-- <a class="p-2 text-muted" href="blog.html">Blog</a> -->
 
         </nav>
@@ -99,33 +99,95 @@
 
 <!--         <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p> -->
         <br>
-        <h4 class="pb-2 mb-4"> I'm Currently Working on </h4>
+        <!-- <h4 class="pb-2 mb-4"> I'm Currently Working on </h4> -->
         <!-- <ul>
           <li><h5>Neural Audio Coding</h5>
               <p class="blog-post-meta"> Jan.2020 - Current    <a href="index.html">Haici Yang</a></p>
         <p>More content coming soon</p></li>
  -->    
-        <div class="col-md-6">
+        <div class="col-md-12">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-warning">Audio Coding. Generative model</strong>
+                <h3 class="mb-0">Generative Predictive Codec</h3>
+                <div class="mb-1 text-muted">Ongoing </div>
+                <p class="card-text mb-auto">The intuition of the coding problem is to target the use case where source speech is observed as a mixture with background sound. It is to address the common situations, where people would like to know the environmental status of the speaker, even though they still pay the most attention to the speech content.</p>
+                <!-- <a href="#" class="stretched-link">More</a> --> 
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Source Separation</strong>
+                <h3 class="mb-0">DON’T SEPARATE, LEARN TO REMIX: END-TO-END NEURAL REMIXING WITH JOINT OPTIMIZATION</h3>
+                <div class="mb-1 text-muted">Oct.2021 </div>
+
+                <p class="card-text mb-auto">The task of manipulating the level and/or effects of individual instruments to recompose a mixture of recordings, or remixing, is common across a variety of applications. This process, however, traditionally requires access to individual source recordings, restricting the creative process. Source separation algorithms can separate a mixture into its respective components, which a user can adjust the levels and mix them back together. This two-step approach, however, still suffers from audible artifacts and motivates further work. In this work, we learn to remix music directly by re-purposing Conv-TasNet, a well-known source separation model, into two neural remixing architectures. We explicit a loss term that directly measures remix quality and jointly optimize it with a separation loss.
+                </p>
+                <br>
+                <img class="bd-placeholder-img" width="80%" height="80%" src="figs/remix.png" alt="">
+                <p><a href="https://arxiv.org/abs/2008.12889">[Paper]</a><a href="https://www.github.com/haiciyang/Remixing">[Code]</a><a href="https://saige.sice.indiana.edu/research-projects/remixing/">[Demo]  </a></p>
+                <!-- <a href="#" class="stretched-link">More</a> --> 
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <!-- <strong class="mb-2">Audio Upmixing</strong> -->
+                <strong class="d-inline-block mb-2 text-primary">Latent Representation Learning</strong>
+                <h3 class="mb-0">Upmixing via Style Transfer: A Variational Autoencoder for
+Disentangling Spatial Images and Musical Content</h3>
+                <div class="mb-1 text-muted">Summer 2021 internship project</div>
+                <p class="card-text mb-auto">In the stereo-to-multichannel upmixing problem for music, one of the main tasks is to set the directionality of the instrument sources in the multichannel rendering results. In this paper, we propose a modified variational autoencoder model that learns a latent space to describe the spatial images in multichannel music. We seek to disentangle the spatial images and music content, so the learned latent variables are invariant to the music.
+                </p>
+                <br>
+                <img class="bd-placeholder-img" width="80%" height="80%" src="figs/upmix.png" alt="">
+                <p><a href="https://saige.sice.indiana.edu/research-projects/sanac/">[Demo]</a></p>
+                <!-- <a href="#" class="stretched-link">More</a> --> 
+              </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-12">
             <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div class="col p-4 d-flex flex-column position-static">
                 <strong class="d-inline-block mb-2 text-warning">Audio Coding</strong>
                 <h3 class="mb-0">Source-Aware Neural Audio Coding (SANAC)</h3>
-                <div class="mb-1 text-muted">Jan.2020 - Current</div>
+                <div class="mb-1 text-muted">Oct.2020 Accepted by ICASSP 2021</div>
+
+                <p class="card-text mb-auto">The intuition of the coding problem is to target the use case where source speech is observed as a mixture with background sound. It is to address the common situations, where people would like to know the environmental status of the speaker, even though they still pay the most attention to the speech content. We harmonized the source separation concept into the coding system, so that its encoder predicts the speech and noise code vectors defined in their own latent spaces
+                </p>
+                <img class="bd-placeholder-img" width="80%" height="80%" src="figs/sanac.png" alt="">
+                <p><a href="https://arxiv.org/abs/2008.12889">[Paper]  </a>
+                <a href="https://github.com/haiciyang/SANAC">[Code]  </a>
+                <a href="https://saige.sice.indiana.edu/research-projects/sanac/">[Demo]  </a></p>
+                <!-- <a href="#" class="stretched-link">More</a> -->
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-md-12">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 grey">Speaker Recognition</strong>
+                <h3 class="mb-0">Non-local Convolutional Neural Network for Speaker Recognition</h3>
+                <div class="mb-1 text-muted">Summer 2022 internship project</div>
 
                 <p class="card-text mb-auto">The intuition of the coding problem is to target the use case where source speech is observed as a mixture with background sound. It is to address the common situations, where people would like to know the environmental status of the speaker, even though they still pay the most attention to the speech content.
                 </p>
                 <br>
-
-                <p class="card-text mb-auto">We harmonized the source separation concept into the coding system, so that its encoder predicts the speech and noise code vectors defined in their own latent spaces</p>
-                <br>
-                <p><a href="https://saige.sice.indiana.edu/research-projects/sanac/">[Demo]  </a><a href="https://arxiv.org/abs/2008.12889">[Paper]</a></p>
-                <!-- <a href="#" class="stretched-link">More</a> -->
+                <p><a href="https://arxiv.org/abs/2008.12889">[Paper]</a></p>
+                <!-- <a href="#" class="stretched-link">More</a> --> 
               </div>
-              <!-- <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              </div> -->
             </div>
           </div>
+
         </ul>
         <hr>
         
