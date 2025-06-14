@@ -6,3 +6,16 @@
 body {
   padding-top: 56px;
 }
+
+a:link,a:visited{
+/*color:rgb(127,127,127);*/
+color:#000000;
+background-color:transparent;
+text-decoration:underline;
+}
+
+a:hover,a:active{
+color:#E11584;
+background-color:transparent;
+text-decoration:underline;
+}
