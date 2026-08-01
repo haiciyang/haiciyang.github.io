@@ -5,6 +5,7 @@
  */
 body {
   padding-top: 56px;
+  overflow-x:hidden;
 }
 
 a:link,a:visited{
